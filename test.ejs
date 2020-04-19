@@ -1,0 +1,10 @@
+[person]
+name      nationality 
+----      -----------
+<%
+if (users) {
+	for (var i = 0; i < users.length; i++) {
+		let user = users[i]; -%>
+<%- 		sprintf('%-10s %-10s',user.name,user.nationality) %>
+<%}
+} -%>
